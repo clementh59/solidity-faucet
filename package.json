@@ -1,0 +1,31 @@
+{
+  "name": "solidity_contract_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test:unit": "npx hardhat test ./test/unit/*.test.js",
+    "test:integration": "npx hardhat test ./test/integration/*.test.js",
+    "test": "npx hardhat test",
+    "clean": "rm -rf artifacts/ build/ cache/",
+    "prettier": "npx prettier --write .",
+    "deploy": "npx hardhat run scripts/deploy.js --network rinkeby"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@truffle/artifactor": "^4.0.168",
+    "chai": "^4.3.6",
+    "circomlibjs": "^0.1.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.0",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
+  },
+  "author": "Clément Hecquet",
+  "license": "ISC"
+}
