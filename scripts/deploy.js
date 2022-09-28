@@ -1,18 +1,10 @@
 require('dotenv').config();
-const PARAM = process.env.CONTRACT_PARAM;
 
 async function main() {
-  /* FROM ABI:
-  Hasher = await ethers.getContractFactory(hasherContract.abi, hasherContract.bytecode);
-  hasher = await Hasher.deploy();
+  const Token = await ethers.getContractFactory('CTKN');
+  const token = await Token.deploy();
 
-  console.log(`Hasher address: ${hasher.address}`);
-  */
-
-  const MyContract = await ethers.getContractFactory('MyContract');
-  const myContract = await MyContract.deploy(PARAM);
-
-  console.log(`Contract address: ${myContract.address}`);
+  console.log(`Contract address: ${token.address}`);
 }
 
 main()
