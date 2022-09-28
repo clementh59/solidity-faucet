@@ -15,6 +15,7 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.1.1",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
     "@truffle/artifactor": "^4.0.168",
     "chai": "^4.3.6",
     "circomlibjs": "^0.1.7",
@@ -23,6 +24,7 @@
     "prettier": "2.7.1"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
     "dotenv": "^16.0.2",
     "prettier-plugin-solidity": "^1.0.0-beta.24"
   },
