@@ -1,6 +1,6 @@
-# solidity contract template
+# solidity ERC20 faucet
 
-This repository contains a smart contract which implements an incremental merkle tree based on poseidon hash.
+This repository contains a smart contract .
 
 ## Usage
 
@@ -55,7 +55,3 @@ npm run deploy
 The contracts addresses will be printed in the console. Then, you can interact with the deployed contract using the script
 `scripts/interactWithDeployedContract.js`. You'll need to replace `CONTRACT_ADDRESS` with the address of your freshly
 deployed merkle tree contract.
-
-## Areas of improvement
-
-The solidity function `isKnownRoot` can do up to 2^32 iterations while looking for the root, which isn't great.
