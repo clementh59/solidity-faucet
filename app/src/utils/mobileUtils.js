@@ -4,5 +4,5 @@
  * @returns {boolean} - true if it is on mobile - false otherwise
  */
 export const isMobile = (width) => {
-    return width <= 768;
-}
+  return width <= 768;
+};

@@ -1,15 +1,13 @@
-import { useAccount } from "wagmi";
+import { useAccount } from 'wagmi';
 
 const WalletAddress = () => {
-    const { address, isConnecting, isDisconnected } = useAccount();
+  const { address, isConnecting, isDisconnected } = useAccount();
 
-    if (isConnecting) 
-        return <div>Connecting...</div>;
-        
-    if (isDisconnected) 
-        return <div>Disconnected</div>;
+  if (isConnecting) return <div>Connecting...</div>;
 
-    return <div>Connected Wallet: {address}</div>;
+  if (isDisconnected) return <div>Disconnected</div>;
+
+  return <div>Connected Wallet: {address}</div>;
 };
 
 export default WalletAddress;
