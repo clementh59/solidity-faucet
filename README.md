@@ -1,6 +1,6 @@
 # solidity ERC20 faucet
 
-This repository contains a smart contract .
+This repository contains a smart contract which allows anyone to mint an ERC20 token.
 
 ## Usage
 
