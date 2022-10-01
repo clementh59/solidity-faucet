@@ -40,6 +40,7 @@ const FaucetPage = () => {
             return;
         }
         updateUserBalance();
+        // eslint-disable-next-line
     }, [address]);
 
     return (
